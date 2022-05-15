@@ -54,6 +54,7 @@ export default defineConfig({
   },
   // 打包配置
   build: {
+    assetsDir: 'static',
     target: 'modules', // 设置最终构建的浏览器兼容目标。modules:支持原生 ES 模块的浏览器
     outDir: 'dist', // 指定输出路径
     sourcemap: false, // 构建后是否生成 source map 文件

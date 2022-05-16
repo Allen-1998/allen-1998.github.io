@@ -40,6 +40,7 @@ export default defineConfig({
     }),
     vue(),
     Unocss(),
+    Pages(),
   ],
   server: {
     port: 3000,

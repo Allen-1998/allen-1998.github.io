@@ -1,7 +1,7 @@
 import 'nprogress/nprogress.css'
 
 import NProgress from 'nprogress'
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 
 // eslint-disable-next-line import/no-unresolved
 import routes from '~pages'
@@ -9,7 +9,7 @@ import routes from '~pages'
 routes.push({ path: '/:catchAll(.*)', redirect: '/notFound' })
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHashHistory(),
   routes,
 })
 

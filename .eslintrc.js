@@ -14,6 +14,7 @@ module.exports = {
     // eslint-config-prettier 的缩写
     'prettier',
     'vue-global-api',
+    '.eslintrc-auto-import.json',
   ],
   parserOptions: {
     ecmaVersion: 12,

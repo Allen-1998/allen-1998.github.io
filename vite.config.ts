@@ -40,7 +40,9 @@ export default defineConfig({
     }),
     vue(),
     Unocss(),
-    Pages(),
+    Pages({
+      dirs: [{ dir: 'src/pages', baseRoute: '/me' }],
+    }),
   ],
   server: {
     port: 3000,

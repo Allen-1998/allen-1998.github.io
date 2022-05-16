@@ -1,6 +1,9 @@
 <template>
-  <router-view></router-view>
+  <router-view />
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const route = useRouter().getRoutes()
+console.log(route)
+</script>
 <style lang="scss"></style>

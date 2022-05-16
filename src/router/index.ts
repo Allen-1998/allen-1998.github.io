@@ -6,7 +6,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 // eslint-disable-next-line import/no-unresolved
 import routes from '~pages'
 
-routes.push({ path: '/', redirect: '/me' }, { path: '/:catchAll(.*)', redirect: '/me/notFound' })
+routes.push({ path: '/:catchAll(.*)', redirect: '/notFound' })
 
 const router = createRouter({
   history: createWebHistory(),

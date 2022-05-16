@@ -66,17 +66,17 @@ export default defineConfig({
         drop_debugger: true,
       },
     }, // 去除 console debugger
-    // rollupOptions: {
-    //   manualChunks(id) {
-    //     if (id.includes('node_modules')) {
-    //       return id.toString().split('node_modules/')[1].split('/')[0].toString()
-    //     }
-    //   },
-    //   output: {
-    //     chunkFileNames: 'static/js/[name]-[hash].js',
-    //     entryFileNames: 'static/js/[name]-[hash].js',
-    //     assetFileNames: 'static/[ext]/[name]-[hash].[ext]',
-    //   },
-    // }, // 将打包后的资源分开
+    rollupOptions: {
+      manualChunks(id) {
+        if (id.includes('node_modules')) {
+          return id.toString().split('node_modules/')[1].split('/')[0].toString()
+        }
+      },
+      output: {
+        chunkFileNames: 'static/js/[name]-[hash].js',
+        entryFileNames: 'static/js/[name]-[hash].js',
+        assetFileNames: 'static/[ext]/[name]-[hash].[ext]',
+      },
+    }, // 将打包后的资源分开
   },
 })

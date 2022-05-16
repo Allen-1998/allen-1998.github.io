@@ -3,9 +3,13 @@ import 'nprogress/nprogress.css'
 import NProgress from 'nprogress'
 import { createRouter, createWebHistory } from 'vue-router'
 
-// @ts-expect-error no routes type
-// eslint-disable-next-line import/no-unresolved
-import routes from '~pages'
+import NotFound from '@/pages/404.vue'
+import Home from '@/pages/index.vue'
+
+const routes = [
+  { path: '/', name: 'Home', component: Home },
+  { path: '/:pathMatch(.*)*', name: 'NotFound', component: NotFound },
+]
 
 const router = createRouter({
   history: createWebHistory(),

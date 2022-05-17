@@ -1,0 +1,1 @@
+import{_ as r}from"./index-c805236d.js";import{m as e,l as s}from"./@vue-8a26d03b.js";import"./@vueuse-63afb139.js";import"./nprogress-6de85f3e.js";import"./vue-router-df01ba83.js";var o=r({},[["render",function(r,o){return s(),e("div",null,"404")}]]);export{o as default};

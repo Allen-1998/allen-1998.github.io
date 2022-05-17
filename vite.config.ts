@@ -17,14 +17,7 @@ export default defineConfig({
   plugins: [
     AutoImport({
       dts: 'src/auto-imports.d.ts', // 可以自定义文件生成的位置，默认是根目录下
-      imports: [
-        'vue',
-        'vue-router',
-        'pinia',
-        {
-          '@/helper/pinia-auto-refs': ['useStore'],
-        },
-      ],
+      imports: ['vue', 'vue-router', '@vueuse/core', '@vueuse/head'],
       eslintrc: {
         enabled: true, // Default `false`
         filepath: './.eslintrc-auto-import.json', // Default `./.eslintrc-auto-import.json`
@@ -48,7 +41,7 @@ export default defineConfig({
     base: './ ', //生产环境路径
   },
   optimizeDeps: {
-    include: ['vue', 'vue-router'],
+    include: ['vue', 'vue-router', '@vueuse/core', '@vueuse/head'],
   },
   css: {
     preprocessorOptions: { scss: { charset: false } },

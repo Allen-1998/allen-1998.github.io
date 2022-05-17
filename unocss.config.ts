@@ -1,17 +1,20 @@
-import { defineConfig, presetAttributify, presetIcons, presetUno } from 'unocss'
-// https://github.com/unocss/unocss
+import {
+  defineConfig,
+  presetAttributify,
+  presetIcons,
+  presetUno,
+  transformerCompileClass,
+  transformerDirectives,
+  transformerVariantGroup,
+} from 'unocss'
 
-export const createConfig = () => {
-  return defineConfig({
-    presets: [
-      presetUno(),
-      presetAttributify(),
-      presetIcons({
-        prefix: '',
-      }),
-    ],
-    include: [/\.vue$/],
-  })
-}
-
-export default createConfig()
+export default defineConfig({
+  theme: {
+    fontFamily: {
+      sans: "'Inter', sans-serif",
+      mono: "'Fira Code', monospace",
+    },
+  },
+  presets: [presetAttributify(), presetUno(), presetIcons()],
+  transformers: [transformerVariantGroup(), transformerDirectives(), transformerCompileClass()],
+})

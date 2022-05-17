@@ -1,8 +1,8 @@
 <template>
-  <a class="select-none" title="Toggle Color Scheme" @click="toggleDark">
+  <div select-none cursor-pointer op70 title="Toggle Color Scheme" @click="toggleDark">
     <div v-show="isDark" i-ri-moon-line />
     <div v-show="!isDark" i-ri-sun-line />
-  </a>
+  </div>
 </template>
 
 <script setup lang="ts">

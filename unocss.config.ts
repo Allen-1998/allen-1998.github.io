@@ -1,4 +1,4 @@
-import { defineConfig, presetAttributify, presetIcons, presetUno, Rule } from 'unocss'
+import { defineConfig, presetAttributify, presetIcons, presetUno } from 'unocss'
 // https://github.com/unocss/unocss
 
 export const createConfig = () => {

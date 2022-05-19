@@ -1,19 +1,19 @@
 :root {
   --bg-color: #fefefe;
-  --text-color: #111;
+  --text-color: #171717;
 }
 .dark {
-  --bg-color: #1d212f;
+  --bg-color: #171717;
   --text-color: #fefefe;
+}
+html {
+  background-color: var(--bg-color);
+  line-height: 1.5;
+  color: var(--text-color);
+  scrollbar-gutter: stable;
 }
 body {
   margin: 0;
-  background-color: var(--bg-color);
-  color: var(--text-color);
-}
-#app {
-  width: 100%;
-  height: 100vh;
 }
 ::-webkit-scrollbar {
   width: 6px;
@@ -29,4 +29,17 @@ body {
 ::-webkit-scrollbar-thumb:active {
   border-radius: 3px;
   background: rgba(128, 128, 128, 0.5);
+}
+a {
+  text-decoration: none;
+  font-weight: inherit;
+  color: var(--text-color--);
+  transition: border 0.3s ease-in-out;
+}
+.link-bottom {
+  border-color: var(--text-color--);
+  border-bottom: 1px solid rgba(125, 125, 125, 0.3);
+  &:hover {
+    border-bottom: 1.5px solid rgba(125, 125, 125, 0.3);
+  }
 }

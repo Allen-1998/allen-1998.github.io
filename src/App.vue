@@ -1,8 +1,8 @@
 <template>
-  <div select-none>
+  <div select-none w-full>
     <NavBar />
-    <main w-full box-border px-7 py-10>
-      <router-view />
+    <main w-full h-screen box-border flex flex-col pt-12>
+      <router-view flex-1 />
       <Footer />
     </main>
   </div>

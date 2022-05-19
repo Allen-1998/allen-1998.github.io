@@ -1,17 +1,20 @@
 <template>
-  <header z-40>
-    <div absolute lg:fixed m-6>Allen's Blog</div>
-    <nav class="nav">
-      <div class="spacer" />
-      <div class="right">
-        <a href="https://juejin.cn/user/1918010476469400" target="_blank" title="掘金" lt-md:hidden>
-          掘金
-        </a>
-        <a href="https://github.com/Allen-1998" target="_blank" title="GitHub" lt-md:hidden>
-          <div i-uil-github-alt />
-        </a>
-        <toggle-theme />
-      </div>
+  <header absolute z-40 w-full flex justify-between items-center>
+    <div m3>Allen's Blog</div>
+    <nav flex items-center m3>
+      <a
+        mr3
+        href="https://juejin.cn/user/1918010476469400"
+        target="_blank"
+        title="掘金"
+        lt-md:hidden
+      >
+        掘金
+      </a>
+      <a mr3 href="https://github.com/Allen-1998" target="_blank" title="GitHub" lt-md:hidden>
+        <div i-uil-github-alt />
+      </a>
+      <toggle-theme />
     </nav>
   </header>
 </template>

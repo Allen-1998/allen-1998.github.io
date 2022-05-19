@@ -1,5 +1,5 @@
 <template>
-  <div h-full flex flex-col justify-center items-center all:transition-400>
+  <div flex flex-col justify-center items-center all:transition-400>
     <div text-5xl fw100 mb7>About me.</div>
     <div op70 text-lg fw300 m1>生命不息 前进不止</div>
     <div op70 text-lg fw300 m1>想做一些还没做过的东西</div>

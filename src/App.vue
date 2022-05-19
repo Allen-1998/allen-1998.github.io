@@ -1,9 +1,11 @@
 <template>
-  <NavBar />
-  <main w-full box-border px-7 py-10>
-    <router-view />
-    <Footer />
-  </main>
+  <div select-none>
+    <NavBar />
+    <main w-full box-border px-7 py-10>
+      <router-view />
+      <Footer />
+    </main>
+  </div>
 </template>
 
 <script setup lang="ts">

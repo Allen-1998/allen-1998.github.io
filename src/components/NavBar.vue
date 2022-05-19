@@ -1,7 +1,7 @@
 <template>
   <header absolute z-40 w-full flex justify-between items-center>
     <div m3>Allen's Blog</div>
-    <nav flex items-center m3>
+    <nav flex items-center m3 op70>
       <a
         mr3
         href="https://juejin.cn/user/1918010476469400"
